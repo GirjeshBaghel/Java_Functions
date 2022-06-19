@@ -1,3 +1,5 @@
+//WAP to take a two no from user and do task for operators in separate funtions
+
 import java.util.*;
 class Operators
 {
