@@ -1,11 +1,7 @@
 import java.util.*;
 class Palidorm_No
 {
-    public static void main(String[] args)
-    {
-        palidorm();
-    }
-
+    // palidorm function
     public static void palidorm()
     {
         Scanner sc = new Scanner(System.in);
@@ -15,7 +11,8 @@ class Palidorm_No
        System.out.print("Please the no : ");
        n= sc.nextInt();
   
-        temp=n;    
+        temp=n;
+        // checking no is greater than zero or not
         while(n>0)
         {    
             r = n%10;  
@@ -27,6 +24,13 @@ class Palidorm_No
         System.out.println("Palindrome number :  "+sum);    
         else    
         System.out.println("Not palindrome : ");    
-        }  
+     }
+    
+    // main method
+    public static void main(String[] args)
+    {
+        // palidorm function calling
+        palidorm();
+    }
 
 }
