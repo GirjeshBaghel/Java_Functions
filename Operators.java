@@ -1,11 +1,7 @@
 import java.util.*;
 class Operators
 {
-    public static void main(String[] args)
-    {
-        accept();
-    }
-
+    // accept method that accepting the values from user and calling the other funtions
     public static void accept()
     {
         Scanner sc = new Scanner(System.in);
@@ -21,6 +17,7 @@ class Operators
 
     }
 
+    // arth method that take two parameters
     public static void arth(int x, int y)
     {
         System.out.println("Arthmetic Operators Output is ");
@@ -31,7 +28,8 @@ class Operators
         System.out.println("Modulus : "+(x%y));
 
     }
-
+    
+    // relation method that taking two parameters
     public static void relation(int x, int y)
     {
         System.out.println("Your Relational Output is : ");
@@ -45,6 +43,7 @@ class Operators
       
     }
 
+    // ternery method that taking two parameters
     public static void ternary(int x, int y)
     {
          System.out.println("Your Ternary Output is   ");
@@ -52,6 +51,7 @@ class Operators
           System.out.println("Output is here : "+res);
     }
 
+    // logical method that taking two parameters
     public static void logical(int a, int b)
     {
         System.out.println("Your Logical Output is here : ");
@@ -60,6 +60,7 @@ class Operators
         System.out.println("NOT : "+(a>b | b>a));
     }
 
+    // assigment method that taking two parameters
     public static void assigment(int x, int y)
     {
         System.out.println("Your Assigment Operator  Output is here : ");
@@ -68,5 +69,12 @@ class Operators
         x = x-y;
         System.out.println("The value of X : "+x);
         System.out.println("The value of Y : "+y);
-    } 
+    }
+    
+    // main method
+    public static void main(String[] args)
+    {
+        // accept method calling
+        accept();
+    }
 }
